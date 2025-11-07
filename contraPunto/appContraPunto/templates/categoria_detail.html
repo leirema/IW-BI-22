@@ -1,0 +1,34 @@
+﻿{% extends "base.html"%}
+{% block content %}
+<section class="categoria_header" style="border-top: 6px solid {{ categoria.color }}">
+    <div class="categoria_info">
+        {% if categoria.icono %}
+        <img alt="{{ categoria.nombre }}" src="{{categoria.icono.url}} class="icono_categoria_detalle">
+        {% endif %}
+        <div>
+            <h1>{{ categoria.nombre }}</h1>
+            <p>{{ categoria.descripción }}</p>
+        </div>
+    </div>
+</section>
+<section class="comparativa_categoria">
+    <h2>Comparativas en esta Categoría</h2>
+    <div class="carrusel">
+        {% for comp in comparativas_relacionadas %}
+        <article class="card_horizontal">
+            {% if comp.imagen %}
+                <img alt="{{ comp.titulo }}" src="{{comp.imagen.url}}" >
+            {% endif %}
+                <div>
+                    <h3><a href="{% url 'comparativa' comp.id %}">{{ comp.titulo }}</a></h3>
+                    <p class="meta">
+                        <span>{{ comp.fecha }}</span> ·
+                        <span>Objetividad: {{ comp.objetividad|floatformat:1 }}</span>
+                    </p>
+                    <p>Palabras clave:{{ comp.claves }}</p>
+                </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

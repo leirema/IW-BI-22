@@ -1,0 +1,43 @@
+﻿{% load static %}
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ContraPunto</title>
+        <!-- Paginas asociadas a estilos y css -->
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/estilos_base.css' %}" />
+    </head>
+    <body>
+        <!-- Cabecera común -->
+        <header class="cabecera">
+            <div class="container">
+                <a class="brand" href="{% url 'home' %}">
+                    <span class="contra">CONTRA</span><span class="punto">PUNT<span class="mirilla">O</span></span>
+                </a>
+                <p class="eslogan">Te ponemos las noticias a tiro</p>
+                <!-- Barra de Navegación -->
+                <nav class="navegador">
+                    <a href="{% url 'home' %}">Inicio</a>
+                    <a href="{% url 'comparativas' %}">Punto de mira</a>
+                    <a href="{% url 'categorias' %}">Apunta al foco</a>
+                    <a href="{% url 'medios' %}">Quién cuenta la historia</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Sección principal -->
+        <main id="contenido" class="container">
+            {% block content %}
+            {% endblock %}
+        </main>
+        <!-- Pie de página común -->
+        <footer class="pie_de_pagina">
+            <div class="container">
+                <p>&copy; 2025 ContraPunto. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>

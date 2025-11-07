@@ -1,0 +1,21 @@
+﻿{% extends "base.html"%}
+{% block content %}
+<section class="medio_list">
+    <h2>Fuentes informativas</h2>
+    <div class="grid_medios">
+        {% for m in medios %}
+        <article class="card_medio">
+            {% if m.logo %}
+            <img  alt="{{ m.nombre }}" src="{{m.logo.url}}" class="logo_medio">
+            {% endif %}
+            <div class="info_medio">
+                <h3><a href="{% url 'medio' m.id %}">{{ m.nombre }}</a></h3>
+                <p class="tipo_pais">{{ m.get_tipo_display }} · {{ m.pais }}</p>
+                <p>{{ m.descripcion|truncatewords:20 }}</p>
+                <a href="{{ m.web }}" target="_blank" class="enlace_medio">Visitar sitio</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+    {% endblock %}

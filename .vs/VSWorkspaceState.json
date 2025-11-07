@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\contraPunto",
+    "\\contraPunto\\appContraPunto",
+    "\\contraPunto\\appContraPunto\\static",
+    "\\contraPunto\\appContraPunto\\static\\css",
+    "\\contraPunto\\appContraPunto\\templates",
+    "\\contraPunto\\media",
+    "\\contraPunto\\media\\img",
+    "\\contraPunto\\staticfiles\\css"
+  ],
+  "SelectedNode": "\\contraPunto\\appContraPunto\\static",
+  "PreviewInSolutionExplorer": false
+}

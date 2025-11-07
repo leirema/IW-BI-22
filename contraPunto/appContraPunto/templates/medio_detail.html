@@ -1,0 +1,54 @@
+﻿{% extends "base.html"%}
+{% block content %}
+<section class="medio_header">
+    <div class="medio_info">
+        {% if medio.logo %}
+        <img alt="{{ medio.nombre }}" src="{{medio.logo.url}}" class="logo_medio_detalle">
+        {% endif %}
+        <div>
+            <h1>{{ medio.nombre }}</h1>
+            <p class="tipo_pais">{{ medio.get_tipo_display }} · {{ medio.pais }}</p>
+            <p>{{ medio.descripcion }}</p>
+            <a href="{{ medio.web }}" target="_blank" class="enlace_medio">Visitar sitio web</a>
+        </div>
+    </div>
+</section>
+<section class="comparativa_medio">
+    <h2>Comparativas en este Medio</h2>
+    <div class="carrusel">
+        {% for comp in comparativas_atravesadas %}
+        <article class="card_horizontal">
+            {% if comp.imagen %}
+            <img alt="{{ comp.titulo }}" src="{{comp.imagen.url}}">
+            {% endif %}
+            <div>
+                <h3><a href="{% url 'comparativa' comp.id %}">{{ comp.titulo }}</a></h3>
+                <p class="meta">
+                    <span>{{ comp.fecha }}</span> ·
+                    <span>Objetividad: {{ comp.objetividad|floatformat:1 }}/5</span>
+                </p>
+                <p>Palabras clave:{{ comp.claves }}</p>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+<section class="noticia_list">
+    <h2>Noticias de este médio</h2>
+    <div class="grid_noticias">
+        {% for not in noticias_relacionadas %}
+        <article class="card_noticia">
+            {% if not.imagen %}
+            <img alt="{{ not.titulo }}" src="{{not.imagen.url}}">
+            {% endif %}
+            <div>
+                <h3><a href="{% url 'noticia' not.id %}">{{ not.titulo }}</a></h3>
+                <p>{{ not.resumen|truncatewords:15 }}</p>
+            </div>
+        </article>
+        {% empty %}
+        <p>No hay noticias publicadas.</p>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

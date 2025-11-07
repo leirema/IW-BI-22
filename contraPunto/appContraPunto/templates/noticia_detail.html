@@ -1,0 +1,13 @@
+﻿{% extends "base.html"%}
+{% block content %}
+<section class="noticia_detail">
+    <h2>{{ noticia.titulo }}</h2>
+    <p><strong>Medio:</strong> {{ noticia.medio }}</p>
+    <p><strong>Fecha de publicación:</strong> {{ noticia.fecha }}</p>
+    <div>
+        {{ noticia.resumen|linebreaks }}
+    </div>
+    <p><strong>Link original:</strong> {{ noticia.url }}</p>
+</section>
+{% endblock %}
+

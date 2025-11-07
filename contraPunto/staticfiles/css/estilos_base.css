@@ -1,0 +1,157 @@
+/* Tipografía y estructura general */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #111;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+.cabecera {
+    background-color: #fff;
+    border-bottom: 2px solid #b71c1c;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.brand {
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: #111;
+}
+
+.contra {
+    font-weight: 700;
+}
+
+.punto {
+    font-weight: 300;
+    position: relative;
+}
+
+/* Mirilla en la O */
+.mirilla {
+    display: inline-block;
+    position: relative;
+    color: transparent;
+}
+
+    .mirilla::before {
+        content: 'O';
+        color: #111;
+        position: relative;
+    }
+
+    .mirilla::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0.6em;
+        height: 0.6em;
+        border: 2px solid #b71c1c;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.eslogan {
+    font-size: 0.95rem;
+    color: #444;
+    margin-top: 0.3rem;
+    font-style: italic;
+}
+
+/* Navegación */
+.navegador {
+    margin-top: 1rem;
+}
+
+    .navegador a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: #111;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+        .navegador a:hover {
+            color: #b71c1c;
+        }
+
+/* Contenido principal */
+main {
+    padding: 3rem 0;
+    line-height: 1.7;
+}
+
+/* Titulares */
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* Imágenes */
+img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+    img:hover {
+        filter: grayscale(0%) contrast(110%);
+    }
+
+/* Citas o frases clave */
+blockquote {
+    border-left: 4px solid #b71c1c;
+    padding-left: 1rem;
+    color: #333;
+    font-style: italic;
+    background-color: #f1f1f1;
+    margin: 2rem 0;
+}
+
+/* Botones */
+button, .btn {
+    background-color: #b71c1c;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+    button:hover, .btn:hover {
+        background-color: #7f0f0f;
+    }
+
+/* Animación fade-in */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Pie de página */
+.pie_de_pagina {
+    background-color: #111;
+    color: #eee;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
