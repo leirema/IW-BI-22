@@ -12,40 +12,201 @@
             <a href="{{ medio.web }}" target="_blank" class="enlace_medio">Visitar sitio web</a>
         </div>
     </div>
-    <div class="medio_graf">
-        <div>
-            <canvas id="perfil_sesgos"></canvas>
-        </div>
+    <section class="medio_graf">
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script>
+        <article class="graf_sesgo">
+            <div>
+                <canvas id="perfil_sesgos"></canvas>
+            </div>
+            <script>
             const data_sesgo = {{data_sesgo|safe}};
-            const ctx = document.getElementById('perfil_sesgos');
-            new Chart(ctx, {
+            const ctxRadar = document.getElementById('perfil_sesgos');
+            new Chart(ctxRadar, {
                 type: 'radar',
                 data: {
-                    labels: ['Ideología', 'Emocional', 'Enfoque dominante'],
+                    labels: ['Ideología', 'Emocional', 'Enfoque'],
                     datasets: [{
-                        label: 'Perfil del medio',
                         data: [data_sesgo.ideologia, data_sesgo.emocion, data_sesgo.enfoque ],
                         borderWidth: 2,
                         borderColor: 'rgba(255, 99, 132, 0.8)',
-                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                        pointBackgroundColor: 'rgba(255, 99, 132, 1)'
+                        backgroundColor: 'rgba(255, 99, 132, 0.15)',
+                        pointBackgroundColor: 'rgba(255, 99, 132, 1)',
+                        pointRadius: 5,
+                        pointHoverRadius: 8,
+                        pointHoverBorderWidth: 3,
+                        pointHitRadius: 20,
+                        tension: 0.3
                     }]
                 },
                 options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+
                     scales: {
                         r: {
-                            beginAtZero: true,
                             min: 0,
-                            max: 5
+                            max: 5,
+                            beginAtZero: true,
+
+                            angleLines: {
+                                color: 'rgba(0, 0, 0, 0.1)',
+                                lineWidth: 1
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.1)'
+                            },
+                            pointLabels: {
+                                font: {
+                                    size: 14,
+                                    family: 'Inter, sans-serif'
+                                },
+                                color: '#333'
+                            },
+                            ticks: {
+                                backdropColor: 'transparent',
+                                showLabelBackdrop: false,
+                                stepSize: 1,
+                                font: {
+                                    size: 12
+                                }
+                            }
                         }
+                    },
+
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'PERFIL DEL MEDIO',
+                            font: {
+                                size: 18,
+                                family: 'Inter, sans-serif'
+                            },
+                            padding: 15
+                        },
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.75)',
+                            padding: 10,
+                            titleFont: {
+                                size: 14
+                            },
+                            bodyFont: {
+                                size: 13
+                            },
+                            callbacks: {
+                                label: function (context) {
+                                    return `${context.label}: ${context.raw}`;
+                                }
+                            }
+                        }
+                    },
+
+                    animation: {
+                        duration: 1200,
+                        easing: 'easeOutQuart'
+                    },
+
+                    hover: {
+                        mode: 'nearest',
+                        intersect: true
                     }
                 }
             });
-        </script>
-        <p class="explicacion_sesgo">{{ label_ideologia }}</p>
-    </div>
+            </script>
+            <p class="explicacion_sesgo">{{ label_ideologia }}</p>
+            <p>El enfoque dominante de este medio es {{label_enfoque}}</p>
+            <p>Objetividad media: {{obj_media}}/5</p>
+        </article>
+        <article class="graf_categorias">
+            <div>
+                <canvas id="cubrir_categorias"></canvas>
+            </div>
+            <script>
+                const label_categorias = {{ label_categorias| safe }};
+                const data_categorias = {{ data_categorias| safe }};
+                const color_categorias = {{ color_categorias| safe }};
+                const ctxDonut = document.getElementById('cubrir_categorias');
+                new Chart(ctxDonut, {
+                    type: 'doughnut',
+                    data: {
+                        labels: label_categorias,
+                        datasets: [{
+                            data: data_categorias,
+                            backgroundColor: color_categorias,
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+
+                        cutout: '65%',        // tamaño del agujero central
+                        radius: '90%',        // tamaño general del donut
+                        rotation: -90,        // empieza arriba
+                        circumference: 360,   // círculo completo
+
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'PANORAMA DE CATEGORÍAS CUBIERTAS',
+                                font: {
+                                    size: 18,
+                                    family: 'Inter, sans-serif'
+                                },
+                                padding: 15
+                            },
+                            legend: {
+                                position: 'right',
+                                labels: {
+                                    usePointStyle: true,
+                                    pointStyle: 'circle',
+                                    padding: 20,
+                                    font: {
+                                        size: 14,
+                                        family: 'Inter, sans-serif'
+                                    }
+                                }
+                            },
+
+                            tooltip: {
+                                enabled: true,
+                                backgroundColor: 'rgba(0,0,0,0.7)',
+                                borderColor: 'rgba(255,255,255,0.2)',
+                                borderWidth: 1,
+                                padding: 10,
+                                titleFont: {
+                                    size: 14
+                                },
+                                bodyFont: {
+                                    size: 13
+                                },
+                                callbacks: {
+                                    label: (context) => {
+                                        return `${context.label}: ${context.raw}`;
+                                    }
+                                }
+                            },
+                            datalabels: false
+                        },
+
+                        animation: {
+                            animateRotate: true,
+                            animateScale: true,
+                            duration: 1200,
+                            easing: 'easeOutQuart'
+                        },
+
+                        hover: {
+                            mode: 'nearest',
+                            intersect: true
+                        }
+                    }
+                });
+            </script>
+        </article>
+    </section>
 </section>
 <section class="comparativa_medio">
     <h2>Comparativas en este Medio</h2>

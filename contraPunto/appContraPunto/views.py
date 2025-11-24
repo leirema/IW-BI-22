@@ -2,7 +2,7 @@
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView
 from .models import Noticia, Categoria, Comparativa, Medio
-from .utils import calcular_dominancia_enfoque
+from .utils import calcular_dominancia_enfoque, calcular_categorias_cubiertas
 from django.db.models import Avg
 # Create your views here.
 
@@ -69,21 +69,24 @@ class MedioDetailView(DetailView):
             texto_ideologia = "Idelogia Conservadora Polarizada"
         
         if ideologia_real is not None:
-            ideologia_norm = ((ideologia_real + 5) / 10) * 5
+            ideologia_abs = abs(ideologia_real)
         else:
-            ideologia_norm = 0
+            ideologia_abs = 0
         
         context['label_ideologia'] = texto_ideologia
+        data_emocion = noticias_relacionadas.aggregate(Avg("sesgo_emocional"))["sesgo_emocional__avg"]
+        data_enfoque, context['label_enfoque'] = calcular_dominancia_enfoque(noticias_relacionadas)
         context['data_sesgo'] = {
-            "ideologia": ideologia_norm,
-            "emocion": noticias_relacionadas.aggregate(Avg("sesgo_emocional"))["sesgo_emocional__avg"],
-            "enfoque": calcular_dominancia_enfoque(noticias_relacionadas),
+            "ideologia": ideologia_abs,
+            "emocion": data_emocion,
+            "enfoque": data_enfoque,
         }
+        context['obj_media'] = round(5-(ideologia_abs + data_emocion + data_enfoque)/3, 2)
         # Agregar comparativas atravesadas por la relación noticias del medio
-        context['comparativas_atravesadas'] = (
-            Comparativa.objects.filter(noticias__medio= self.object)
-            .order_by('-fecha')
-            )
+        comparativas_atravesadas = Comparativa.objects.filter(noticias__medio= self.object).distinct()
+        context['comparativas_atravesadas'] = comparativas_atravesadas.order_by('-fecha')      
+        #Clacular datos para la gráfica de panorama de categrías cubiertas
+        context['label_categorias'], context['data_categorias'], context['color_categorias'] = calcular_categorias_cubiertas(comparativas_atravesadas, Categoria.objects.all())
         return context
 
 class MedioListView(ListView):
