@@ -2,6 +2,8 @@
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView
 from .models import Noticia, Categoria, Comparativa, Medio
+from .utils import calcular_dominancia_enfoque
+from django.db.models import Avg
 # Create your views here.
 
 class HomeView(ListView):
@@ -57,10 +59,26 @@ class MedioDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super(MedioDetailView, self).get_context_data(**kwargs)
         # Agregar noticias relacionadas al medio en el contexto
-        context['noticias_relacionadas'] = (
-            Noticia.objects.filter(medio = self.object)
-            .order_by('sesgo_ideologico')
-            )
+        noticias_relacionadas = Noticia.objects.filter(medio = self.object)
+        context['noticias_relacionadas'] = noticias_relacionadas.order_by('sesgo_ideologico')
+        # Calcular datos de las gráficas de sesgo ideológico
+        ideologia_real = noticias_relacionadas.aggregate(Avg("sesgo_ideologico"))["sesgo_ideologico__avg"]
+        if(ideologia_real < 0):
+            texto_ideologia = "Idelogia Progresista Polarizada"
+        else:
+            texto_ideologia = "Idelogia Conservadora Polarizada"
+        
+        if ideologia_real is not None:
+            ideologia_norm = ((ideologia_real + 5) / 10) * 5
+        else:
+            ideologia_norm = 0
+        
+        context['label_ideologia'] = texto_ideologia
+        context['data_sesgo'] = {
+            "ideologia": ideologia_norm,
+            "emocion": noticias_relacionadas.aggregate(Avg("sesgo_emocional"))["sesgo_emocional__avg"],
+            "enfoque": calcular_dominancia_enfoque(noticias_relacionadas),
+        }
         # Agregar comparativas atravesadas por la relación noticias del medio
         context['comparativas_atravesadas'] = (
             Comparativa.objects.filter(noticias__medio= self.object)

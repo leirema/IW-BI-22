@@ -1,4 +1,4 @@
-﻿{% extends "base.html"%}
+﻿{% extends "base.html" %}
 {% block content %}
 <section class="medio_header">
     <div class="medio_info">
@@ -11,6 +11,40 @@
             <p>{{ medio.descripcion }}</p>
             <a href="{{ medio.web }}" target="_blank" class="enlace_medio">Visitar sitio web</a>
         </div>
+    </div>
+    <div class="medio_graf">
+        <div>
+            <canvas id="perfil_sesgos"></canvas>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            const data_sesgo = {{data_sesgo|safe}};
+            const ctx = document.getElementById('perfil_sesgos');
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Ideología', 'Emocional', 'Enfoque dominante'],
+                    datasets: [{
+                        label: 'Perfil del medio',
+                        data: [data_sesgo.ideologia, data_sesgo.emocion, data_sesgo.enfoque ],
+                        borderWidth: 2,
+                        borderColor: 'rgba(255, 99, 132, 0.8)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        pointBackgroundColor: 'rgba(255, 99, 132, 1)'
+                    }]
+                },
+                options: {
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            min: 0,
+                            max: 5
+                        }
+                    }
+                }
+            });
+        </script>
+        <p class="explicacion_sesgo">{{ label_ideologia }}</p>
     </div>
 </section>
 <section class="comparativa_medio">
