@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\contraPunto",
+    "\\contraPunto\\appContraPunto",
+    "\\contraPunto\\appContraPunto\\static",
+    "\\contraPunto\\appContraPunto\\static\\css",
+    "\\contraPunto\\appContraPunto\\templates",
     "\\contraPunto\\contraPunto",
-    "\\contraPunto\\staticfiles",
-    "\\contraPunto\\staticfiles\\admin",
-    "\\contraPunto\\staticfiles\\admin\\js",
-    "\\contraPunto\\staticfiles\\admin\\js\\admin",
-    "\\contraPunto\\staticfiles\\admin\\js\\vendor",
-    "\\contraPunto\\staticfiles\\admin\\js\\vendor\\jquery",
-    "\\contraPunto\\staticfiles\\admin\\js\\vendor\\select2"
+    "\\contraPunto\\media",
+    "\\contraPunto\\media\\img",
+    "\\contraPunto\\staticfiles"
   ],
-  "SelectedNode": "\\contraPunto\\manage.py",
+  "SelectedNode": "\\contraPunto\\appContraPunto\\templates\\medio_detail.html",
   "PreviewInSolutionExplorer": false
 }

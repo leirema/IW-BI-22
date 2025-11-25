@@ -64,9 +64,9 @@ class MedioDetailView(DetailView):
         # Calcular datos de las gráficas de sesgo ideológico
         ideologia_real = noticias_relacionadas.aggregate(Avg("sesgo_ideologico"))["sesgo_ideologico__avg"]
         if(ideologia_real < 0):
-            texto_ideologia = "Idelogia Progresista Polarizada"
+            texto_ideologia = "Progresista"
         else:
-            texto_ideologia = "Idelogia Conservadora Polarizada"
+            texto_ideologia = "Conservador"
         
         if ideologia_real is not None:
             ideologia_abs = abs(ideologia_real)

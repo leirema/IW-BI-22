@@ -3,20 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\categoria_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\categoria_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\categoria_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\categoria_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_grafica.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\static\\css\\estilos_grafica.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\medio_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\medio_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\noticia_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\noticia_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\medio_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\medio_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\comparativa_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\comparativa_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\comparativa_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\comparativa_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\base.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\base.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_tabla.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\static\\css\\estilos_tabla.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_base.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\static\\css\\estilos_base.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_detalle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\static\\css\\estilos_detalle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_lista.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\static\\css\\estilos_lista.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\utils.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\utils.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\medio_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\medio_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\economia.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
@@ -45,14 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\telecinco.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\media\\img\\telecinco.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\comparativa_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\comparativa_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\comparativa_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contraPunto\\appContraPunto\\templates\\comparativa_detail.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,110 +114,246 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "medio_list.html",
+              "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\medio_list.html",
+              "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\templates\\medio_list.html",
+              "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\medio_list.html",
+              "RelativeToolTip": "contraPunto\\appContraPunto\\templates\\medio_list.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-25T00:29:16.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "home.html",
+              "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\home.html",
+              "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\templates\\home.html",
+              "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\home.html",
+              "RelativeToolTip": "contraPunto\\appContraPunto\\templates\\home.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-25T00:29:10.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "categoria_list.html",
+              "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\categoria_list.html",
+              "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\templates\\categoria_list.html",
+              "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\categoria_list.html",
+              "RelativeToolTip": "contraPunto\\appContraPunto\\templates\\categoria_list.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-25T00:27:35.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "noticia_detail.html",
+              "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\noticia_detail.html",
+              "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\templates\\noticia_detail.html",
+              "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\noticia_detail.html",
+              "RelativeToolTip": "contraPunto\\appContraPunto\\templates\\noticia_detail.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-25T00:27:13.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "categoria_detail.html",
+              "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\categoria_detail.html",
+              "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\templates\\categoria_detail.html",
+              "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\categoria_detail.html",
+              "RelativeToolTip": "contraPunto\\appContraPunto\\templates\\categoria_detail.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-25T00:25:18.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "base.html",
+              "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\base.html",
+              "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\templates\\base.html",
+              "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\base.html",
+              "RelativeToolTip": "contraPunto\\appContraPunto\\templates\\base.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-25T00:24:28.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "estilos_grafica.css",
+              "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_grafica.css",
+              "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\static\\css\\estilos_grafica.css",
+              "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_grafica.css",
+              "RelativeToolTip": "contraPunto\\appContraPunto\\static\\css\\estilos_grafica.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-25T00:24:17.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "estilos_tabla.css",
+              "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_tabla.css",
+              "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\static\\css\\estilos_tabla.css",
+              "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_tabla.css",
+              "RelativeToolTip": "contraPunto\\appContraPunto\\static\\css\\estilos_tabla.css",
+              "ViewState": "AgIAAIAAAAAAAAAAAADwv5IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-25T00:21:31.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "estilos_detalle.css",
+              "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_detalle.css",
+              "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\static\\css\\estilos_detalle.css",
+              "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_detalle.css",
+              "RelativeToolTip": "contraPunto\\appContraPunto\\static\\css\\estilos_detalle.css",
+              "ViewState": "AgIAANcAAAAAAAAAAAAIwCMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-25T00:17:59.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "estilos_base.css",
+              "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_base.css",
+              "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\static\\css\\estilos_base.css",
+              "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_base.css",
+              "RelativeToolTip": "contraPunto\\appContraPunto\\static\\css\\estilos_base.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-25T00:11:29.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "estilos_lista.css",
+              "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_lista.css",
+              "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\static\\css\\estilos_lista.css",
+              "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\static\\css\\estilos_lista.css",
+              "RelativeToolTip": "contraPunto\\appContraPunto\\static\\css\\estilos_lista.css",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAIwLAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-25T00:11:24.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "elDiario.jpeg",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\elDiario.jpeg",
               "RelativeDocumentMoniker": "contraPunto\\media\\img\\elDiario.jpeg",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\elDiario.jpeg",
               "RelativeToolTip": "contraPunto\\media\\img\\elDiario.jpeg",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-11-24T18:28:06.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T18:28:06.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 19,
               "Title": "cope.png",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\cope.png",
               "RelativeDocumentMoniker": "contraPunto\\media\\img\\cope.png",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\cope.png",
               "RelativeToolTip": "contraPunto\\media\\img\\cope.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-11-24T18:28:03.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T18:28:03.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 20,
               "Title": "diario_abc.jpeg",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\diario_abc.jpeg",
               "RelativeDocumentMoniker": "contraPunto\\media\\img\\diario_abc.jpeg",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\diario_abc.jpeg",
               "RelativeToolTip": "contraPunto\\media\\img\\diario_abc.jpeg",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-11-24T18:28:01.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T18:28:01.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 21,
               "Title": "elPais.jpg",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\elPais.jpg",
               "RelativeDocumentMoniker": "contraPunto\\media\\img\\elPais.jpg",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\elPais.jpg",
               "RelativeToolTip": "contraPunto\\media\\img\\elPais.jpg",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-11-24T18:27:59.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T18:27:59.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
               "Title": "telecinco.png",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\telecinco.png",
               "RelativeDocumentMoniker": "contraPunto\\media\\img\\telecinco.png",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\telecinco.png",
               "RelativeToolTip": "contraPunto\\media\\img\\telecinco.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-11-24T18:27:53.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T18:27:53.047Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 22,
               "Title": "sociedad.png",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\sociedad.png",
               "RelativeDocumentMoniker": "contraPunto\\media\\img\\sociedad.png",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\sociedad.png",
               "RelativeToolTip": "contraPunto\\media\\img\\sociedad.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-11-24T18:26:25.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T18:26:25.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "economia.png",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\economia.png",
               "RelativeDocumentMoniker": "contraPunto\\media\\img\\economia.png",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\media\\img\\economia.png",
               "RelativeToolTip": "contraPunto\\media\\img\\economia.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-11-24T18:25:56.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T18:25:56.043Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "comparativa_list.html",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\comparativa_list.html",
               "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\templates\\comparativa_list.html",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\comparativa_list.html",
               "RelativeToolTip": "contraPunto\\appContraPunto\\templates\\comparativa_list.html",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-24T16:48:50.543Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "comparativa_detail.html",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\comparativa_detail.html",
               "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\templates\\comparativa_detail.html",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\comparativa_detail.html",
               "RelativeToolTip": "contraPunto\\appContraPunto\\templates\\comparativa_detail.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-24T16:48:40.181Z",
               "EditorCaption": ""
@@ -186,27 +366,27 @@
               "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\templates\\medio_detail.html",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\templates\\medio_detail.html",
               "RelativeToolTip": "contraPunto\\appContraPunto\\templates\\medio_detail.html",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwBoAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAADwv3wAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-24T15:43:45.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "views.py",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\views.py",
               "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\views.py",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\views.py",
               "RelativeToolTip": "contraPunto\\appContraPunto\\views.py",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFMAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEQAAAAqAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVDhPrZS9T1tnFMZ/1/cLGxy7BNuJIeCG2hIiSSWqRmmR8Fh16lhVVVTRIR34Ezo2kSqUqUJeKkHLEqlDWZAyUJZEoUNaoTatXEgsQykGFFyw8de997337RA5MeYqUx/pDOc55zx6znmlF/5PSCmVzjybzX4/NTV1U9f1TvoUKpWKrFard5aXl\u002B/u7e1Vu\u002BtaNzE9PU0ikeimX2J1dVUWi8UvVFWVKysr3xQKhXJn/YwgQKFQ6KZQVZVUKoWu64FsNhtNp9O3LMsKapo2u7Gxcdju8xVMJpPdFIry6jqGYeiTk5MDuq5/IqW0hBBfFwqFOkCgc6gNwzDORPuuqqqytLTE3Nycura2diEUCk2Yphlvz/o63Nzc7KbQNI10Os27N95n4vp7aAGFZv3Emp\u002Bf//tUX2fSxtjYWDdFzRL8lD9kv9qk2bTRA3AxrGoXh4b7A4FXi/oK\u002Bjm0\u002BpI8269xUKnz\u002BOk\u002BwrGJ9Rn6R\u002BNDI/F4vK/d53vDVCp1JioNwaONPfI7ZTzh4AmXaq2hNEQgGA6HQ\u002B1ZX0EA13VxUfjrucO9xwf8tl3m2qUoE6l\u002BzvfqCOEghCAWrV9d\u002Bu7mz17zjyee5w37rry1tQXAbkvnxycn7JZPEMLGdRyE4\u002BA6Np7r4CkKhvIcmuvQWh8n9uWsr8NMJkMmk6Ehezg4riGEg\u002BcINDwiQY1ISCca0nk7FeJasgpuE6x/wN75wNdhPp8HYGe3iWXZeEIw3K8xk20SVI\u002BR0gPpETWOGAwegGi8EHWPI691ODKYwAiAEA63sgbvXPiV8dgzrsQLXBnIM9RbRBH/gqiBWwc9eeQraNs2tm0z8obJ5YEgYVMlds5DkS54NggLPA9cQAZA6tBz1cUY/NZ35VKpBIAJfJ69TMWCRGQLWja4LVAioARBV8DMHGG\u002B\u002BSc9bz1dXFyc9RUcHR09lSuKgumVJLW6gtsC9xB6b4BUQD2/88P93a8ePLj3KJfLNc4ILiwsvPwIOvHZpx9uXzIHU9i/v3iAk1\u002BQfdelG5woP3x4u5jL5RrdM6\u002BFlPKc9Jy7srW9J2vrnrRK21LK\u002B1LKj2dmZlLtvv8AoKdgTW7XN1wAAAAASUVORK5CYII=",
               "WhenOpened": "2025-11-24T15:28:07.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "models.py",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\models.py",
               "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\models.py",
@@ -214,21 +394,19 @@
               "RelativeToolTip": "contraPunto\\appContraPunto\\models.py",
               "ViewState": "AgIAABMAAAAAAAAAAAAAACIAAAAWAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVDhPrZS9T1tnFMZ/1/cLGxy7BNuJIeCG2hIiSSWqRmmR8Fh16lhVVVTRIR34Ezo2kSqUqUJeKkHLEqlDWZAyUJZEoUNaoTatXEgsQykGFFyw8de997337RA5MeYqUx/pDOc55zx6znmlF/5PSCmVzjybzX4/NTV1U9f1TvoUKpWKrFard5aXl\u002B/u7e1Vu\u002BtaNzE9PU0ikeimX2J1dVUWi8UvVFWVKysr3xQKhXJn/YwgQKFQ6KZQVZVUKoWu64FsNhtNp9O3LMsKapo2u7Gxcdju8xVMJpPdFIry6jqGYeiTk5MDuq5/IqW0hBBfFwqFOkCgc6gNwzDORPuuqqqytLTE3Nycura2diEUCk2Yphlvz/o63Nzc7KbQNI10Os27N95n4vp7aAGFZv3Emp\u002Bf//tUX2fSxtjYWDdFzRL8lD9kv9qk2bTRA3AxrGoXh4b7A4FXi/oK\u002Bjm0\u002BpI8269xUKnz\u002BOk\u002BwrGJ9Rn6R\u002BNDI/F4vK/d53vDVCp1JioNwaONPfI7ZTzh4AmXaq2hNEQgGA6HQ\u002B1ZX0EA13VxUfjrucO9xwf8tl3m2qUoE6l\u002BzvfqCOEghCAWrV9d\u002Bu7mz17zjyee5w37rry1tQXAbkvnxycn7JZPEMLGdRyE4\u002BA6Np7r4CkKhvIcmuvQWh8n9uWsr8NMJkMmk6Ehezg4riGEg\u002BcINDwiQY1ISCca0nk7FeJasgpuE6x/wN75wNdhPp8HYGe3iWXZeEIw3K8xk20SVI\u002BR0gPpETWOGAwegGi8EHWPI691ODKYwAiAEA63sgbvXPiV8dgzrsQLXBnIM9RbRBH/gqiBWwc9eeQraNs2tm0z8obJ5YEgYVMlds5DkS54NggLPA9cQAZA6tBz1cUY/NZ35VKpBIAJfJ69TMWCRGQLWja4LVAioARBV8DMHGG\u002B\u002BSc9bz1dXFyc9RUcHR09lSuKgumVJLW6gtsC9xB6b4BUQD2/88P93a8ePLj3KJfLNc4ILiwsvPwIOvHZpx9uXzIHU9i/v3iAk1\u002BQfdelG5woP3x4u5jL5RrdM6\u002BFlPKc9Jy7srW9J2vrnrRK21LK\u002B1LKj2dmZlLtvv8AoKdgTW7XN1wAAAAASUVORK5CYII=",
-              "WhenOpened": "2025-11-21T12:41:32.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T12:41:32.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "utils.py",
               "DocumentMoniker": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\utils.py",
               "RelativeDocumentMoniker": "contraPunto\\appContraPunto\\utils.py",
               "ToolTip": "C:\\Users\\TESTER\\Documents\\python\\projects\\IW-BI-22\\contraPunto\\appContraPunto\\utils.py",
               "RelativeToolTip": "contraPunto\\appContraPunto\\utils.py",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAYAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVDhPrZS9T1tnFMZ/1/cLGxy7BNuJIeCG2hIiSSWqRmmR8Fh16lhVVVTRIR34Ezo2kSqUqUJeKkHLEqlDWZAyUJZEoUNaoTatXEgsQykGFFyw8de997337RA5MeYqUx/pDOc55zx6znmlF/5PSCmVzjybzX4/NTV1U9f1TvoUKpWKrFard5aXl\u002B/u7e1Vu\u002BtaNzE9PU0ikeimX2J1dVUWi8UvVFWVKysr3xQKhXJn/YwgQKFQ6KZQVZVUKoWu64FsNhtNp9O3LMsKapo2u7Gxcdju8xVMJpPdFIry6jqGYeiTk5MDuq5/IqW0hBBfFwqFOkCgc6gNwzDORPuuqqqytLTE3Nycura2diEUCk2Yphlvz/o63Nzc7KbQNI10Os27N95n4vp7aAGFZv3Emp\u002Bf//tUX2fSxtjYWDdFzRL8lD9kv9qk2bTRA3AxrGoXh4b7A4FXi/oK\u002Bjm0\u002BpI8269xUKnz\u002BOk\u002BwrGJ9Rn6R\u002BNDI/F4vK/d53vDVCp1JioNwaONPfI7ZTzh4AmXaq2hNEQgGA6HQ\u002B1ZX0EA13VxUfjrucO9xwf8tl3m2qUoE6l\u002BzvfqCOEghCAWrV9d\u002Bu7mz17zjyee5w37rry1tQXAbkvnxycn7JZPEMLGdRyE4\u002BA6Np7r4CkKhvIcmuvQWh8n9uWsr8NMJkMmk6Ehezg4riGEg\u002BcINDwiQY1ISCca0nk7FeJasgpuE6x/wN75wNdhPp8HYGe3iWXZeEIw3K8xk20SVI\u002BR0gPpETWOGAwegGi8EHWPI691ODKYwAiAEA63sgbvXPiV8dgzrsQLXBnIM9RbRBH/gqiBWwc9eeQraNs2tm0z8obJ5YEgYVMlds5DkS54NggLPA9cQAZA6tBz1cUY/NZ35VKpBIAJfJ69TMWCRGQLWja4LVAioARBV8DMHGG\u002B\u002BSc9bz1dXFyc9RUcHR09lSuKgumVJLW6gtsC9xB6b4BUQD2/88P93a8ePLj3KJfLNc4ILiwsvPwIOvHZpx9uXzIHU9i/v3iAk1\u002BQfdelG5woP3x4u5jL5RrdM6\u002BFlPKc9Jy7srW9J2vrnrRK21LK\u002B1LKj2dmZlLtvv8AoKdgTW7XN1wAAAAASUVORK5CYII=",
-              "WhenOpened": "2025-11-21T12:40:35.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T12:40:35.838Z"
             }
           ]
         }

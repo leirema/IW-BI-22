@@ -1,4 +1,9 @@
 ﻿{% extends "base.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/estilos_detalle.css' %}" />
+<link rel="stylesheet" href="{% static 'css/estilos_grafica.css' %}" />
+{% endblock %}
 {% block content %}
 <section class="medio_header">
     <div class="medio_info">
@@ -24,7 +29,7 @@
             new Chart(ctxRadar, {
                 type: 'radar',
                 data: {
-                    labels: ['Ideología', 'Emocional', 'Enfoque'],
+                    labels: ['Ideología Polarizada', 'Subjetividad Emocional', 'Enfoque Dominante'],
                     datasets: [{
                         data: [data_sesgo.ideologia, data_sesgo.emocion, data_sesgo.enfoque ],
                         borderWidth: 2,
@@ -115,9 +120,9 @@
                 }
             });
             </script>
-            <p class="explicacion_sesgo">{{ label_ideologia }}</p>
-            <p>El enfoque dominante de este medio es {{label_enfoque}}</p>
-            <p>Objetividad media: {{obj_media}}/5</p>
+            <p class="explicacion_sesgo">Orientación ideológica: <strong>{{ label_ideologia }}</strong></p>
+            <p class="explicacion_sesgo">Enfoque predominante: <strong>{{ label_enfoque }}</strong></p>
+            <p class="explicacion_sesgo">Objetividad media: <strong>{{ obj_media }}/5</strong></p>
         </article>
         <article class="graf_categorias">
             <div>
@@ -205,6 +210,9 @@
                     }
                 });
             </script>
+            <p>Esta visualización representa la distribución temática del medio. 
+            A través de ella se identifica qué categorías concentran su producción informativa 
+            y cuáles ocupan un lugar marginal, revelando su especialización y prioridades editoriales.</p>
         </article>
     </section>
 </section>

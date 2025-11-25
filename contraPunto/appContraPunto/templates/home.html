@@ -1,53 +1,57 @@
 ﻿{% extends "base.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/estilos_lista.css' %}" />
+{% endblock %}
 {% block content %}
-    <section class="intro">
-        <h1>Bienvenido a ContraPunto</h1>
-        <p>
-            En un mundo saturado de información, esta plataforma te ayuda a ver más allá de los titulares.
-            El objetivo es ofrecer una visión plural de la actualidad, mostrando cómo distintos medios narran los mismos hechos desde perspectivas diversas.
-            Cada <strong>comparativa</strong> reúne noticias de varios comunicados sobre un mismo tema, para que puedas analizar diferencias en el enfoque, el tono y la orientación ideológica.
-        </p>
-        <p>
-            Las noticias no solo informan: también interpretan. Por eso, nuestro sistema identifica tres tipos de <strong>sesgos</strong> en cada informe: 
-        </p>
-        <ul>
-            <li><strong>Ideológico</strong>: la posición política del medio, entre lo progresista y lo conservador.</li>
-            <li><strong>Emocional</strong>: el estilo narrativo, desde lo analítico (desmeluza datos y contexto), pasando por institucional (cita fuentes oficiales) y militante (defiende abiertamente una causa), hasta lo sensacionalista (dramatiza).</li>
-            <li><strong>De enfoque</strong>: la perspectiva predominante, ya sea social (movimientos ciudadanos y minorias), económica (datos del mercado y fuentes financieras), política (institucional y élites) o cultural (territorial y resalta la identidad).</li>
-        </ul>
-        <p>
-            Al combinar estos factores, las comparativas permiten entender no solo lo que se dice, sino también <em>cómo</em> y <em>desde dónde</em> se cuenta.
-        </p>
-        <p>
-            En resumen, forma tu propio criterio: con las versiones, los matices y las intenciones detrás de cada noticia, tendrás una mirada más crítica y completa.
-        </p>
+<section class="intro">
+    <h1>Bienvenido a ContraPunto</h1>
+    <p>
+        En un mundo saturado de información, esta plataforma te ayuda a ver más allá de los titulares.
+        El objetivo es ofrecer una visión plural de la actualidad, mostrando cómo distintos medios narran los mismos hechos desde perspectivas diversas.
+        Cada <strong>comparativa</strong> reúne noticias de varios comunicados sobre un mismo tema, para que puedas analizar diferencias en el enfoque, el tono y la orientación ideológica.
+    </p>
+    <p>
+        Las noticias no solo informan: también interpretan. Por eso, nuestro sistema identifica tres tipos de <strong>sesgos</strong> en cada informe:
+    </p>
+    <ul>
+        <li><strong>Ideológico</strong>: la posición política del medio, entre lo progresista y lo conservador.</li>
+        <li><strong>Emocional</strong>: el estilo narrativo, desde lo analítico (desmeluza datos y contexto), pasando por institucional (cita fuentes oficiales) y militante (defiende abiertamente una causa), hasta lo sensacionalista (dramatiza).</li>
+        <li><strong>De enfoque</strong>: la perspectiva predominante, ya sea social (movimientos ciudadanos y minorias), económica (datos del mercado y fuentes financieras), política (institucional y élites) o cultural (territorial y resalta la identidad).</li>
+    </ul>
+    <p>
+        Al combinar estos factores, las comparativas permiten entender no solo lo que se dice, sino también <em>cómo</em> y <em>desde dónde</em> se cuenta.
+    </p>
+    <p>
+        En resumen, forma tu propio criterio: con las versiones, los matices y las intenciones detrás de cada noticia, tendrás una mirada más crítica y completa.
+    </p>
 
-    </section>
-    <section class="comparativas_destacadas">
-        <h2>Comparativas Destacados</h2>
-        {% for comp in comparativas_destacadas %}
-            <article class="card_comparativa">
-                {% if comp.imagen %}
-                    <img  alt="{{ comp.titulo }}" src="{{comp.imagen.url }}">
-                {% endif %}
-                <h3><a href="{% url 'comparativa' comp.id %}">{{ comp.titulo }}</a></h3>
-                <p>{{ comp.contenido|truncatewords:20 }}</p>
-                <p class="meta">
-                    <span class="fecha">{{ comp.fecha }}</span> |
-                    <span class="objetividad">Obj: {{ comp.objetividad|floatformat:1 }}</span>
-                </p>
-                <p class="categorias">
-                    {% for cat in comp.categoria.all %}
-                        <span class="badge">{{ cat.nombre }}</span>
-                    {% endfor %}
-                </p>
-                <div class="medios">
-                    {% for noticia in comp.noticias.all %}
-                        <img alt="{{ noticia.medio.nombre }}" src="{{noticia.medio.logo.url}}"  class="logo-mini">
-                    {% endfor %}
-                </div>
-            </article>
-        {% endfor %}
-    </section>
+</section>
+<section class="comparativas_destacadas">
+    <h2>Comparativas Destacados</h2>
+    {% for comp in comparativas_destacadas %}
+    <article class="card_comparativa">
+        {% if comp.imagen %}
+        <img alt="{{ comp.titulo }}" src="{{comp.imagen.url }}">
+        {% endif %}
+        <h3><a href="{% url 'comparativa' comp.id %}">{{ comp.titulo }}</a></h3>
+        <p>{{ comp.contenido|truncatewords:20 }}</p>
+        <p class="meta">
+            <span class="fecha">{{ comp.fecha }}</span> |
+            <span class="objetividad">Obj: {{ comp.objetividad|floatformat:1 }}</span>
+        </p>
+        <p class="categorias">
+            {% for cat in comp.categoria.all %}
+            <span class="badge">{{ cat.nombre }}</span>
+            {% endfor %}
+        </p>
+        <div class="medios">
+            {% for noticia in comp.noticias.all %}
+            <img alt="{{ noticia.medio.nombre }}" src="{{noticia.medio.logo.url}}" class="logo-mini">
+            {% endfor %}
+        </div>
+    </article>
+    {% endfor %}
+</section>
 {% endblock %}
 

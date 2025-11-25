@@ -1,4 +1,8 @@
 ﻿{% extends "base.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/estilos_lista.css' %}" />
+{% endblock %}
 {% block content %}
 <section class="medio_list">
     <h2>Fuentes informativas</h2>
@@ -6,7 +10,7 @@
         {% for m in medios %}
         <article class="card_medio">
             {% if m.logo %}
-            <img  alt="{{ m.nombre }}" src="{{m.logo.url}}" class="logo_medio">
+            <img alt="{{ m.nombre }}" src="{{m.logo.url}}" class="logo_medio">
             {% endif %}
             <div class="info_medio">
                 <h3><a href="{% url 'medio' m.id %}">{{ m.nombre }}</a></h3>

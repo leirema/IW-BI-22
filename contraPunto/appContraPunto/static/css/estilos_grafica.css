@@ -1,0 +1,85 @@
+/* =========================================================
+   ESTILOS PARA LAS GRÁFICAS DEL MEDIO (medio_graf)
+   ========================================================= */
+
+/* Contenedor general */
+.medio_graf {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: stretch;
+}
+
+/* Tarjeta contenedora de cada gráfica */
+.graf_sesgo,
+.graf_categorias {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    /* Canvas asegurado que crece correctamente */
+    .graf_sesgo div,
+    .graf_categorias div {
+        position: relative;
+        width: 100%;
+        height: 320px;
+    }
+
+    /* Textos explicativos */
+    .graf_sesgo p,
+    .graf_categorias p {
+        margin-top: 1rem;
+        font-size: 0.95rem;
+        color: #444;
+        line-height: 1.5;
+    }
+    .explicacion_sesgo {
+        margin: 0.02rem 0; 
+        line-height: 0.3; 
+    }
+    /* Titular interno (si se usara otro) */
+    .graf_sesgo h3,
+    .graf_categorias h3 {
+        margin-bottom: 1rem;
+        font-family: 'Merriweather', serif;
+    }
+
+    /* Ajuste de leyendas */
+    .graf_categorias .chart-legend li {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+    }
+
+/* ==========================
+   RESPONSIVE
+   ========================== */
+
+@media (max-width: 900px) {
+    .medio_graf {
+        grid-template-columns: 1fr;
+    }
+
+    .graf_sesgo div,
+    .graf_categorias div {
+        height: 280px;
+    }
+}
+
+@media (max-width: 600px) {
+    .graf_sesgo div,
+    .graf_categorias div {
+        height: 240px;
+    }
+
+    .graf_sesgo,
+    .graf_categorias {
+        padding: 1.2rem;
+    }
+}

@@ -1,26 +1,31 @@
 ﻿{% extends "base.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/estilos_detalle.css' %}" />
+<link rel="stylesheet" href="{% static 'css/estilos_tabla.css' %}" />
+{% endblock %}
 {% block content %}
 <section class="comparativa_detail">
     <section class="cabecera_comparativa">
-    {% if comparativa.imagen %}
-      <img alt="{{ comparativa.titulo }}" src="{{comparativa.imagen.url}}"  class="imagen_comparativa_detalle">
-    {% endif %}
-      <div class="info_comparativa">
-          <h1>{{ comparativa.titulo }}</h1>
-          <p class="meta">
-              <span>{{ comparativa.fecha }}</span> ·
-              <span>Obj: {{ comparativa.objetividad|floatformat:1 }}</span>
-          </p>
-          <p class="categorias">
-              {% for cat in comparativa.categoria.all %}
-              <span class="badge">{{ cat.nombre }}</span>
-              {% endfor %}
-          </p>
-          <article class="contenido_comparativa">
-              <p>{{ comparativa.contenido|linebreaks }}</p>
-          </article>
-      </div>
-  </section>
+        {% if comparativa.imagen %}
+        <img alt="{{ comparativa.titulo }}" src="{{comparativa.imagen.url}}" class="imagen_comparativa_detalle">
+        {% endif %}
+        <div class="info_comparativa">
+            <h1>{{ comparativa.titulo }}</h1>
+            <p class="meta">
+                <span>{{ comparativa.fecha }}</span> ·
+                <span>Obj: {{ comparativa.objetividad|floatformat:1 }}</span>
+            </p>
+            <p class="categorias">
+                {% for cat in comparativa.categoria.all %}
+                <span class="badge">{{ cat.nombre }}</span>
+                {% endfor %}
+            </p>
+            <article class="contenido_comparativa">
+                <p>{{ comparativa.contenido|linebreaks }}</p>
+            </article>
+        </div>
+    </section>
     <section class="noticia_table">
         <h2>Noticias asociadas</h2>
         <table class="tabla_comparativa">
@@ -62,6 +67,6 @@
                 {% endfor %}
             </tbody>
         </table>
-  </section>
+    </section>
 </section>
 {% endblock %}

@@ -1,0 +1,270 @@
+/* ===========================================================
+   CARDS DE COMPARATIVAS VERTICALES (home y comparativas_list)
+   =========================================================== */
+.card_comparativa {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+    .card_comparativa:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Imagen superior */
+    .card_comparativa img {
+        width: 100%;
+        max-height: 220px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        filter: grayscale(90%);
+        transition: filter 0.5s ease, transform 0.4s ease;
+    }
+
+        .card_comparativa img:hover {
+            filter: grayscale(0%) contrast(110%);
+            transform: scale(1.02);
+        }
+
+    /* Título */
+    .card_comparativa h3 {
+        font-family: 'Merriweather', serif;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        text-transform: none;
+    }
+
+        .card_comparativa h3 a {
+            text-decoration: none;
+            color: #111;
+            transition: color 0.3s ease;
+        }
+
+            .card_comparativa h3 a:hover {
+                color: var(--acento);
+            }
+
+    /* Texto */
+    .card_comparativa p {
+        font-size: 0.95rem;
+        color: #333;
+    }
+
+    /* Metadatos (fecha y objetividad) */
+    .card_comparativa .meta {
+        font-size: 0.8rem;
+        color: #666;
+        margin-top: 0.4rem;
+    }
+
+    /* Categorías */
+    .card_comparativa .categorias {
+        margin-top: 0.5rem;
+    }
+
+    .card_comparativa .badge {
+        display: inline-block;
+        background-color: var(--acento);
+        color: #fff;
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        margin-right: 0.3rem;
+        text-transform: uppercase;
+    }
+
+    /* Logos de medios */
+    .card_comparativa .medios {
+        margin-top: 0.8rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        align-items: center;
+    }
+
+    .card_comparativa .logo-mini {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        filter: grayscale(100%) contrast(90%);
+        transition: filter 0.3s ease;
+    }
+
+        .card_comparativa .logo-mini:hover {
+            filter: grayscale(0%) contrast(110%);
+        }
+
+/* Distribución general de cards */
+.comparativas_destacadas,
+.comparativa_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* =========================================================
+   LISTAS DE CATEGORÍAS
+   ========================================================= */
+
+.categoria_list {
+    margin-top: 2rem;
+}
+
+    .categoria_list h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+.grid_categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.card_categoria {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 1.2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card_categoria:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+/* Icono de categoría */
+.icono_categoria {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.8rem;
+    filter: grayscale(30%);
+}
+
+.card_categoria h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+    .card_categoria h3 a {
+        color: #111;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .card_categoria h3 a:hover {
+            color: var(--acento);
+        }
+
+.card_categoria p {
+    color: #444;
+    font-size: 0.95rem;
+}
+
+/* =========================================================
+   LISTAS DE MEDIOS
+   ========================================================= */
+.medio_list {
+    margin-top: 2rem;
+}
+
+    .medio_list h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+.grid_medios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.card_medio {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+}
+
+    .card_medio:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+/* Logo del medio */
+.logo_medio {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 1rem;
+    filter: grayscale(40%);
+    transition: filter 0.3s ease;
+}
+
+.card_medio:hover .logo_medio {
+    filter: grayscale(0%) contrast(110%);
+}
+
+/* Información textual del medio */
+.info_medio {
+    flex: 1;
+}
+
+    .info_medio h3 {
+        font-family: 'Merriweather', serif;
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+        .info_medio h3 a {
+            color: #111;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            .info_medio h3 a:hover {
+                color: var(--acento);
+            }
+
+    .info_medio .tipo_pais {
+        font-size: 0.85rem;
+        color: #666;
+        margin-bottom: 0.4rem;
+    }
+
+    .info_medio p {
+        font-size: 0.95rem;
+        color: #333;
+    }
+
+.enlace_medio {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--acento);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+    .enlace_medio:hover {
+        color: #7f0f0f;
+        text-decoration: underline;
+    }

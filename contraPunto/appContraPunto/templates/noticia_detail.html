@@ -1,4 +1,8 @@
 ﻿{% extends "base.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/estilos_detalle.css' %}" />
+{% endblock %}
 {% block content %}
 <section class="noticia_detail">
     <h2>{{ noticia.titulo }}</h2>

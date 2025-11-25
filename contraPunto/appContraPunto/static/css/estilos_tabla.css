@@ -1,0 +1,146 @@
+/* ===== TABLA DE NOTICIAS ===== */
+.noticia_table {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+
+    .noticia_table h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-family: 'Merriweather', serif;
+    }
+
+.tabla_comparativa {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+    .tabla_comparativa thead {
+        background-color: var(--acento);
+        color: #fff;
+        text-align: left;
+    }
+
+    .tabla_comparativa th,
+    .tabla_comparativa td {
+        padding: 0.8rem;
+        border-bottom: 1px solid #ddd;
+        vertical-align: top;
+    }
+
+    .tabla_comparativa th {
+        font-weight: 700;
+        font-family: 'Merriweather', serif;
+    }
+
+    .tabla_comparativa tr:hover {
+        background-color: #f9f9f9;
+    }
+
+    /* Columna: Medio */
+    .tabla_comparativa td.medio {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-weight: 600;
+    }
+
+    .tabla_comparativa .logo_medio {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        filter: grayscale(90%);
+        transition: filter 0.3s ease;
+    }
+
+        .tabla_comparativa .logo_medio:hover {
+            filter: grayscale(0%) contrast(110%);
+        }
+
+    /* Columna: Titular */
+    .tabla_comparativa td.titular a {
+        color: #111;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .tabla_comparativa td.titular a:hover {
+            color: var(--acento);
+            text-decoration: underline;
+        }
+
+    /* Columna: Resumen */
+    .tabla_comparativa td.resumen {
+        color: #444;
+    }
+
+    /* Columna: Sesgos */
+    .tabla_comparativa td.sesgos ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .tabla_comparativa td.sesgos li {
+        margin-bottom: 0.3rem;
+        color: #333;
+    }
+
+    .tabla_comparativa td.sesgos strong {
+        color: var(--acento);
+    }
+
+/* Fila vacía */
+.sin-noticias {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .cabecera_comparativa {
+        margin-bottom: 1.5rem;
+    }
+
+    .tabla_comparativa thead {
+        display: none;
+    }
+
+    .tabla_comparativa,
+    .tabla_comparativa tbody,
+    .tabla_comparativa tr,
+    .tabla_comparativa td {
+        display: block;
+        width: 100%;
+    }
+
+        .tabla_comparativa tr {
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.8rem;
+        }
+
+        .tabla_comparativa td {
+            padding: 0.5rem 0;
+        }
+
+            .tabla_comparativa td::before {
+                content: attr(data-label);
+                font-weight: 600;
+                display: block;
+                color: #666;
+                margin-bottom: 0.2rem;
+            }
+
+            .tabla_comparativa td.medio {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+}

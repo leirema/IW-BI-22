@@ -1,4 +1,8 @@
 ﻿{% extends "base.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/estilos_lista.css' %}" />
+{% endblock %}
 {% block content %}
 <section class="categoria_list">
     <h2>Temas y enfoques</h2>
@@ -6,7 +10,7 @@
         {% for cat in categorias %}
         <article class="card_categoria" style="border-top: 5px solid {{ cat.color }}">
             {% if cat.icono %}
-            <img alt="{{ categoria.nombre }}" src="{{categoria.icono.url}}" class="icono_categoria">
+            <img alt="{{ cat.nombre }}" src="{{cat.icono.url}}" class="icono_categoria">
             {% endif %}
             <h3><a href="{% url 'categoria' cat.id %}">{{ cat.nombre }}</a></h3>
             <p>{{ cat.descripción|truncatewords:18 }}</p>
