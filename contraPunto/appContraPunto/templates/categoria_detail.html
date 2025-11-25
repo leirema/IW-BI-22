@@ -11,7 +11,7 @@
         {% endif %}
         <div>
             <h1>{{ categoria.nombre }}</h1>
-            <p>{{ categoria.descripción }}</p>
+            <p>{{ categoria.descripcion }}</p>
         </div>
     </div>
 </section>
@@ -27,7 +27,7 @@
                 <h3><a href="{% url 'comparativa' comp.id %}">{{ comp.titulo }}</a></h3>
                 <p class="meta">
                     <span>{{ comp.fecha }}</span> ·
-                    <span>Objetividad: {{ comp.objetividad|floatformat:1 }}</span>
+                    <span>Objetividad: {{ comp.objetividad|floatformat:1 }}/5</span>
                 </p>
                 <p>Palabras clave:{{ comp.claves }}</p>
             </div>

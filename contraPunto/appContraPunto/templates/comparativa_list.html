@@ -5,29 +5,32 @@
 {% endblock %}
 {% block content %}
 <section class="comparativa_list">
+    <h1>Punto de mira</h1>
     <h2>Análisis de noticias</h2>
-    {% for comp in comparativas %}
-    <article class="card_comparativa">
-        {% if comp.imagen %}
-        <img alt="{{ comp.titulo }}" src="{{comp.imagen.url}}">
-        {% endif %}
-        <h3><a href="{% url 'comparativa' comp.id %}">{{ comp.titulo }}</a></h3>
-        <p>{{ comp.contenido|truncatewords:20 }}</p>
-        <p class="meta">
-            <span class="fecha">{{ comp.fecha }}</span> |
-            <span class="objetividad">Obj: {{ comp.objetividad|floatformat:1 }}</span>
-        </p>
-        <p class="categorias">
-            {% for cat in comp.categoria.all %}
-            <span class="badge">{{ cat.nombre }}</span>
-            {% endfor %}
-        </p>
-        <div class="medios">
-            {% for not in comp.noticias.all %}
-            <img alt="{{ not.medio.nombre }}" src="{{not.medio.logo.url}}" class="logo-mini">
-            {% endfor %}
-        </div>
-    </article>
-    {% endfor %}
+    <div class="grid_comparativa">
+        {% for comp in comparativas %}
+        <article class="card_comparativa">
+            {% if comp.imagen %}
+            <img alt="{{ comp.titulo }}" src="{{comp.imagen.url}}">
+            {% endif %}
+            <h3><a href="{% url 'comparativa' comp.id %}">{{ comp.titulo }}</a></h3>
+            <p>{{ comp.contenido|truncatewords:20 }}</p>
+            <p class="meta">
+                <span class="fecha">{{ comp.fecha }}</span> |
+                <span class="objetividad">Obj: {{ comp.objetividad|floatformat:1 }}/5</span>
+            </p>
+            <p class="categorias">
+                {% for cat in comp.categoria.all %}
+                <span class="badge">{{ cat.nombre }}</span>
+                {% endfor %}
+            </p>
+            <div class="medios">
+                {% for not in comp.noticias.all %}
+                <img alt="{{ not.medio.nombre }}" src="{{not.medio.logo.url}}" class="logo-mini">
+                {% endfor %}
+            </div>
+        </article>
+        {% endfor %}
+    </div>
 </section>
-    {% endblock %}
+{% endblock %}

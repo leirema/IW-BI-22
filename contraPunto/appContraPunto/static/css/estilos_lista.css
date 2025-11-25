@@ -102,13 +102,22 @@
         }
 
 /* Distribución general de cards */
-.comparativas_destacadas,
-.comparativa_list {
+.grid_comparativa {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
+.comparativa_list h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.comparativas_destacadas h2{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
 /* =========================================================
    LISTAS DE CATEGORÍAS
    ========================================================= */

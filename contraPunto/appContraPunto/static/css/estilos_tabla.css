@@ -30,9 +30,20 @@
     .tabla_comparativa td {
         padding: 0.8rem;
         border-bottom: 1px solid #ddd;
-        vertical-align: top;
+        vertical-align: middle;
     }
-
+        .tabla_comparativa td.medio {
+            vertical-align: middle !important;
+            text-align: left;
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+        }
+            .tabla_comparativa td.medio .inner_medio {
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+            }
+   
     .tabla_comparativa th {
         font-weight: 700;
         font-family: 'Merriweather', serif;
@@ -40,14 +51,6 @@
 
     .tabla_comparativa tr:hover {
         background-color: #f9f9f9;
-    }
-
-    /* Columna: Medio */
-    .tabla_comparativa td.medio {
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-        font-weight: 600;
     }
 
     .tabla_comparativa .logo_medio {

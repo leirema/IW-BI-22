@@ -14,7 +14,7 @@
             <h1>{{ comparativa.titulo }}</h1>
             <p class="meta">
                 <span>{{ comparativa.fecha }}</span> ·
-                <span>Obj: {{ comparativa.objetividad|floatformat:1 }}</span>
+                <span>Obj: {{ comparativa.objetividad|floatformat:1 }}/5</span>
             </p>
             <p class="categorias">
                 {% for cat in comparativa.categoria.all %}
@@ -41,16 +41,18 @@
                 {% for noticia in noticias_relacionadas %}
                 <tr>
                     <td class="medio">
-                        {% if noticia.medio.logo %}
-                        <img alt="{{ noticia.medio.nombre }}" src="{{noticia.medio.logo.url }}" class="logo_medio">
-                        {% endif %}
-                        <p>{{ noticia.medio.nombre }}</p>
+                        <div class="inner_medio">
+                            {% if noticia.medio.logo %}
+                            <img alt="{{ noticia.medio.nombre }}" src="{{noticia.medio.logo.url }}" class="logo_medio">
+                            {% endif %}
+                            <p>{{ noticia.medio.nombre }}</p>
+                        </div>
                     </td>
                     <td class="titular">
                         <a href="{{ noticia.enlace }}" target="_blank">{{ noticia.titulo }}</a>
                     </td>
                     <td class="resumen">
-                        {{ noticia.resumen|truncatewords:25 }}
+                        {{ noticia.resumen|truncatewords:100 }}
                     </td>
                     <td class="sesgos">
                         <ul>
