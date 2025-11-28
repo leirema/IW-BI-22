@@ -19,19 +19,19 @@
     <h2>Comparativas en esta Categoría</h2>
     <div class="carrusel">
         {% for comp in comparativas_relacionadas %}
-        <article class="card_horizontal">
+        <a href="{% url 'comparativa' comp.id %}" class="card_horizontal">
             {% if comp.imagen %}
             <img alt="{{ comp.titulo }}" src="{{comp.imagen.url}}">
             {% endif %}
             <div>
-                <h3><a href="{% url 'comparativa' comp.id %}">{{ comp.titulo }}</a></h3>
+                <h3>{{ comp.titulo }}</h3>
                 <p class="meta">
                     <span>{{ comp.fecha }}</span> ·
                     <span>Objetividad: {{ comp.objetividad|floatformat:1 }}/5</span>
                 </p>
                 <p>Palabras clave:{{ comp.claves }}</p>
             </div>
-        </article>
+        </a>
         {% endfor %}
     </div>
 </section>

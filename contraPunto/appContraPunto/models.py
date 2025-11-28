@@ -42,6 +42,7 @@ class Medio(models.Model):
         ('podcast', 'Podcast'),
         ('television', 'Television'),
         ('radio', 'Radio'),
+        ('revista', 'Revista'),
     ])
     pais = models.CharField(max_length=50)
     logo = models.ImageField(upload_to='img', blank=True, null=True, verbose_name='Image')

@@ -20,6 +20,7 @@
     margin-top: 1rem;
 }
 
+
     .tabla_comparativa thead {
         background-color: var(--acento);
         color: #fff;
@@ -53,6 +54,19 @@
         background-color: #f9f9f9;
     }
 
+    /*Columna: medio*/
+    .tabla_comparativa a.medio_url:visited,
+    .tabla_comparativa a.medio_url:link,
+    .tabla_comparativa a.medio_url:active {
+        text-decoration: none;
+        color: inherit;
+    }
+    .tabla_comparativa a.medio_url:hover .logo_medio {
+        filter: grayscale(0%) contrast(110%);
+    }
+    .tabla_comparativa a.medio_url:hover p {
+        font-weight: 700;
+    }
     .tabla_comparativa .logo_medio {
         width: 40px;
         height: 40px;
@@ -61,10 +75,6 @@
         transition: filter 0.3s ease;
     }
 
-        .tabla_comparativa .logo_medio:hover {
-            filter: grayscale(0%) contrast(110%);
-        }
-
     /* Columna: Titular */
     .tabla_comparativa td.titular a {
         color: #111;
@@ -72,7 +82,6 @@
         text-decoration: none;
         transition: color 0.3s ease;
     }
-
         .tabla_comparativa td.titular a:hover {
             color: var(--acento);
             text-decoration: underline;
@@ -82,7 +91,7 @@
     .tabla_comparativa td.resumen {
         color: #444;
     }
-
+   
     /* Columna: Sesgos */
     .tabla_comparativa td.sesgos ul {
         list-style: none;

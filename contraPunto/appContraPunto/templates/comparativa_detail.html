@@ -41,12 +41,12 @@
                 {% for noticia in noticias_relacionadas %}
                 <tr>
                     <td class="medio">
-                        <div class="inner_medio">
+                        <a href="{% url 'medio' noticia.medio.id %}" class="medio_url">
                             {% if noticia.medio.logo %}
                             <img alt="{{ noticia.medio.nombre }}" src="{{noticia.medio.logo.url }}" class="logo_medio">
                             {% endif %}
                             <p>{{ noticia.medio.nombre }}</p>
-                        </div>
+                        </a>
                     </td>
                     <td class="titular">
                         <a href="{{ noticia.enlace }}" target="_blank">{{ noticia.titulo }}</a>

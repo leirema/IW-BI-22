@@ -1,3 +1,8 @@
+:root {
+    --acento: #b71c1c; /* rojo granate */
+}
+
+
 /* ===========================================================
    CARDS DE COMPARATIVAS VERTICALES (home y comparativas_list)
    =========================================================== */
@@ -16,7 +21,19 @@
         transform: translateY(-5px);
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
     }
-
+        .card_comparativa a:hover img {
+            filter: grayscale(0%) contrast(110%);
+            transform: scale(1.02);
+        }
+        .card_comparativa a:hover h3 {
+            color: var(--acento);
+        }
+    .card_comparativa a:visited,
+    .card_comparativa a:link,
+    .card_comparativa a:active {
+        text-decoration: none;
+        color: inherit;
+    }
     /* Imagen superior */
     .card_comparativa img {
         width: 100%;
@@ -28,11 +45,6 @@
         transition: filter 0.5s ease, transform 0.4s ease;
     }
 
-        .card_comparativa img:hover {
-            filter: grayscale(0%) contrast(110%);
-            transform: scale(1.02);
-        }
-
     /* Título */
     .card_comparativa h3 {
         font-family: 'Merriweather', serif;
@@ -40,16 +52,6 @@
         margin-bottom: 0.5rem;
         text-transform: none;
     }
-
-        .card_comparativa h3 a {
-            text-decoration: none;
-            color: #111;
-            transition: color 0.3s ease;
-        }
-
-            .card_comparativa h3 a:hover {
-                color: var(--acento);
-            }
 
     /* Texto */
     .card_comparativa p {
@@ -68,18 +70,30 @@
     .card_comparativa .categorias {
         margin-top: 0.5rem;
     }
-
     .card_comparativa .badge {
         display: inline-block;
         background-color: var(--acento);
-        color: #fff;
+        color: #fff !important;
         padding: 0.3rem 0.6rem;
         border-radius: 6px;
         font-size: 0.8rem;
         margin-right: 0.3rem;
         text-transform: uppercase;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
     }
-
+        .card_comparativa .badge:hover {
+            background-color: #7f0f0f;
+            transform: translateY(-2px);
+            text-decoration: none;
+            color: inherit;
+        }
+        .card_comparativa .badge:visited,
+        .card_comparativa .badge:link,
+        .card_comparativa .badge:active {
+            text-decoration: none;
+            color: inherit;
+        }
     /* Logos de medios */
     .card_comparativa .medios {
         margin-top: 0.8rem;
@@ -140,17 +154,36 @@
 .card_categoria {
     background-color: #fff;
     border: 1px solid #ddd;
+    border-top: 5px solid var(--categoria-color, #ddd); /* aquí usas la variable */
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     padding: 1.2rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
     .card_categoria:hover {
         transform: translateY(-5px);
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
     }
+        .card_categoria:hover h3 {
+            color: var(--acento);
+        }
+    .card_categoria:visited,
+    .card_categoria:link,
+    .card_categoria:active {
+        text-decoration: none;
+        color: inherit;
+    }
+    .card_categoria h3{
+        color: #111;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
 
 /* Icono de categoría */
 .icono_categoria {
@@ -167,15 +200,7 @@
     margin-bottom: 0.5rem;
 }
 
-    .card_categoria h3 a {
-        color: #111;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
 
-        .card_categoria h3 a:hover {
-            color: var(--acento);
-        }
 
 .card_categoria p {
     color: #444;
