@@ -6,12 +6,12 @@
 {% block content %}
 <section class="noticia_detail">
     <h2>{{ noticia.titulo }}</h2>
-    <p><strong>Medio:</strong> {{ noticia.medio }}</p>
+    <p><strong>Medio: </strong><a href="{% url 'medio' noticia.medio.id %}" class="medio_url">{{ noticia.medio }}</a></p>
     <p><strong>Fecha de publicación:</strong> {{ noticia.fecha }}</p>
     <div>
         {{ noticia.resumen|linebreaks }}
     </div>
-    <p><strong>Link original:</strong> {{ noticia.url }}</p>
+    <p><a href="{{ noticia.enlace }}" target="_blank" rel="noopener noreferrer" class="noticia_url"> Fuente original </a></p>
 </section>
 {% endblock %}
 

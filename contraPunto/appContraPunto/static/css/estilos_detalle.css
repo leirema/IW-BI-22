@@ -1,3 +1,7 @@
+:root {
+    --acento: #b71c1c; /* rojo granate */
+}
+
 /* =========================================================
    DETALLE DE CATEGORÍA Y MEDIO + CARDS HORIZONTALES
    ========================================================= */
@@ -264,7 +268,19 @@
         text-transform: uppercase;
         margin-right: 0.4rem;
     }
-
+        .info_comparativa .badge:hover {
+            font-weight: bold;
+            color: var(--acento) !important;
+            transform: translateY(-2px);
+            text-decoration: none;
+            color: inherit;
+        }
+        .info_comparativa .badge:visited,
+        .info_comparativa .badge:link,
+        .info_comparativa .badge:active {
+            text-decoration: none;
+            color: inherit;
+        }
 /* ===== CONTENIDO PRINCIPAL ===== */
 .contenido_comparativa {
     color: #333;
@@ -273,3 +289,51 @@
     text-align: justify;
     margin-top: 1rem;
 }
+
+/* =========================================================
+   COMPARATIVA DETAIL
+   ========================================================= */
+.noticia_detail .medio_url {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-right: 0.4rem;
+}
+
+    .noticia_detail .medio_url:hover {
+        font-weight: bold;
+        color: var(--acento) !important;
+        transform: translateY(-2px);
+        text-decoration: none;
+    }
+
+    .noticia_detail .medio_url:visited,
+    .noticia_detail .medio_url:link,
+    .noticia_detail .medio_url:active {
+        text-decoration: none;
+        color: inherit;
+    }
+.noticia_detail .noticia_url {
+    display: inline-block;
+    color: var(--acento) !important;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-right: 0.4rem;
+}
+
+.noticia_detail .noticia_url:hover {
+    font-weight: bold;
+    color: #7f0f0f !important;
+    transform: translateY(-2px);
+}
+
+    .noticia_detail .noticia_url:visited {
+        text-decoration: none;
+        color: inherit;
+    }

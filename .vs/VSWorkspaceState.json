@@ -5,12 +5,12 @@
     "\\contraPunto\\appContraPunto",
     "\\contraPunto\\appContraPunto\\static",
     "\\contraPunto\\appContraPunto\\static\\css",
-    "\\contraPunto\\appContraPunto\\templates",
-    "\\contraPunto\\contraPunto",
-    "\\contraPunto\\media",
-    "\\contraPunto\\media\\img",
-    "\\contraPunto\\staticfiles"
+    "\\vue_contraPunto",
+    "\\vue_contraPunto\\src",
+    "\\vue_contraPunto\\src\\components",
+    "\\vue_contraPunto\\src\\router",
+    "\\vue_contraPunto\\src\\views"
   ],
-  "SelectedNode": "\\contraPunto\\appContraPunto\\utils.py",
+  "SelectedNode": "\\contraPunto\\appContraPunto\\templates\\noticia_detail.html",
   "PreviewInSolutionExplorer": false
 }

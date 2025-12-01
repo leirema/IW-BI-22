@@ -18,7 +18,7 @@
             </p>
             <p class="categorias">
                 {% for cat in comparativa.categoria.all %}
-                <span class="badge">{{ cat.nombre }}</span>
+                <a href="{% url 'categoria' cat.id %}" class="badge">{{ cat.nombre }}</a>
                 {% endfor %}
             </p>
             <article class="contenido_comparativa">

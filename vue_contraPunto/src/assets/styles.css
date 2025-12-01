@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #fafafa;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.card-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.comparativa-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 260px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.social-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+  .social-buttons .btn {
+    margin: 5px;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+  }
+
+.twitter {
+  background: #1DA1F2;
+}
+
+.facebook {
+  background: #1877F2;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
