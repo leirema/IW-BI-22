@@ -7,7 +7,8 @@ from .utils import calcular_dominancia_enfoque, calcular_categorias_cubiertas
 from django.db.models import Avg, Count
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-# Create your views here.
+from django.utils.decorators import method_decorator
+from ratelimit.decorators import ratelimit
 
 class HomeView(ListView):
     model = Comparativa
@@ -28,6 +29,7 @@ class HomeView(ListView):
                 comparativas_por_categoria.append(comp)
         context["comparativas_destacadas"] = comparativas_por_categoria
         return context
+
 class ComparativaDetailView(DetailView):
     model = Comparativa
     template_name = 'comparativa_detail.html'
@@ -114,6 +116,7 @@ class NoticiaDetailView(DetailView):
     template_name = 'noticia_detail.html'
     context_object_name = 'noticia'
 
+@method_decorator(ratelimit(key='ip', rate='10/m', block=True), name='dispatch')
 class ResultadoFlashView(TemplateView):
     template_name = "flash_resultado.html"
     def get(self, request, *args, **kwargs):
@@ -139,6 +142,7 @@ class ResultadoFlashView(TemplateView):
         context["data_postura"] = [item['total'] for item in conteo]
         return context
 
+@method_decorator(ratelimit(key='ip', rate='10/m', block=True), name='dispatch')
 class RespuestaFlashFormView(FormView):
     form_class = RespuestaFlashForm
     template_name = 'flash_form.html'
