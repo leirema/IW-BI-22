@@ -12,11 +12,22 @@ from django.urls import reverse
 class HomeView(ListView):
     model = Comparativa
     template_name = 'home.html'
-    context_object_name = 'comparativas_destacadas'
-    def get_queryset(self):
-        # Lógica para obtener la lista de categorías para la página de inicio
-        return Comparativa.objects.filter(destacada=True).order_by('-fecha')[:5] # Las 5 más recientes
-
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        categorias = Categoria.objects.all()
+        comparativas_por_categoria = []
+        for cat in categorias:
+            comp = (
+                Comparativa.objects
+                .filter(categoria=cat)
+                .order_by('-fecha')
+                .first()
+            )
+            if comp and comp not in comparativas_por_categoria:
+                comparativas_por_categoria.append(comp)
+        context["comparativas_destacadas"] = comparativas_por_categoria
+        return context
 class ComparativaDetailView(DetailView):
     model = Comparativa
     template_name = 'comparativa_detail.html'
