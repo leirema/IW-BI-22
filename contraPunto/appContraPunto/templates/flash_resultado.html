@@ -1,0 +1,56 @@
+﻿{% extends "base.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/estilos_encuesta.css' %}" />
+<link rel="stylesheet" href="{% static 'css/estilos_grafica.css' %}" />
+{% endblock %}
+{% block content %}
+<h1>Resultados de tu Flash Diario</h1>
+<p>Tus respuestas se han guardado correctamente.</p>
+{% if respuesta.es_correcta %}
+    <p style="color:green;">✔ Tu respuesta de actualidad es CORRECTA</p>
+{% else %}
+    <p style="color:red;">✘ Tu respuesta de actualidad es INCORRECTA</p>
+    <p>La respuesta correcta era: <strong>{{ respuesta.encuesta.respuesta_correcta }}</strong></p>
+{% endif %}
+    <div class="flash_graf_wrapper">
+        <h3>Distribución de posturas A/B</h3>
+        <canvas id="grafAB"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const label_postura = {{ label_postura| safe }};
+        const data_postura = {{ data_postura| safe }};
+        const ctxRadar = document.getElementById('grafAB');
+        new Chart(ctxRadar, {
+            type: "bar",
+            data: {
+                labels: label_postura,
+                datasets: [{
+                    data: data_postura,
+                    backgroundColor: ["#4169E1", "#E94E77"]
+                }]
+            },
+            options: {
+                responsive: false,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false  
+                    },
+                    title: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 1
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+{% endblock %}

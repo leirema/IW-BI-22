@@ -91,7 +91,31 @@ class Noticia(models.Model):
     def __str__(self):
         return f"{self.titulo} - {self.medio.nombre} ({self.fecha})"
 
+# FORMULARIO CLASES NUEVAS
+class EncuestaFlash(models.Model):
+    pregunta_actualidad = models.CharField(max_length=300)
+    opciones_actualidad = models.JSONField()  # [{'codigo':'a','texto':'...'}, ...]
+    respuesta_correcta = models.CharField(max_length=1)  # 'a','b','c','d'
+    posturas = models.JSONField() # [{'codigo':'A','texto':'...'}, ...]
+    fecha_publicacion = models.DateField()
+    activa = models.BooleanField(default=True)
 
+    def __str__(self):
+        return f"Encuesta {self.fecha_publicacion}"
+
+class RespuestaFlash(models.Model):
+    #encuesta actualidad
+    encuesta = models.ForeignKey(EncuestaFlash, on_delete=models.CASCADE)
+    respuesta_actualidad = models.CharField(max_length=1)
+    es_correcta = models.BooleanField()  
+    respuesta_postura = models.CharField(max_length=1)
+    #coleción de datos
+    sesgo_visibilidad = models.IntegerField()
+    tipo_info_valiosa = models.CharField(max_length=20)
+    resumen_usuario = models.TextField(blank=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return f"Formulario {self.timestamp}"
  
 
 

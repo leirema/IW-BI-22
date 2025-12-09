@@ -1,0 +1,67 @@
+﻿{% extends "base.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/estilos_encuesta.css' %}" />
+{% endblock %}
+{% block content %}
+<h1>Flash Diario</h1>
+<form action="{% url 'encuesta_flash' %}" method="post">
+    {% csrf_token %}
+    <!-- PREGUNTA 1 -->
+    <div class="question">
+        <h2>Pregunta de actualidad</h2>
+        <p>{{ encuesta.pregunta_actualidad }}</p>
+        {% for opcion in encuesta.opciones_actualidad %}
+        <label>
+            <input type="radio" name="respuesta_actualidad" value="{{ opcion.codigo }}" required>
+            {{ opcion.texto }}
+        </label><br>
+        {% endfor %}
+    </div>
+    <!-- PREGUNTA 2 -->
+    <div class="question">
+        <h2>¿Con qué postura te identificas más?</h2>
+        {% for postura in encuesta.posturas %}
+        <label>
+            <input type="radio" name="respuesta_postura" value="{{ postura.codigo }}" required>
+            {{ postura.texto }}
+        </label><br>
+        {% endfor %}
+    </div>
+    <!-- PREGUNTA 3 -->
+    <div class="question">
+        <h2>¿Qué cantidad de sesgo has detectado en general?</h2>
+        <!--barra deslizante-->
+        <input type="range"
+               id="sesgo_visibilidad"
+               name="sesgo_visibilidad"
+               min="0"
+               max="10"
+               value="5">
+        <span id="sesgo_valor">5</span>
+    </div>
+    <script>
+        const slider = document.getElementById('sesgo_visibilidad');
+        const output = document.getElementById('sesgo_valor');
+        slider.addEventListener('input', function () {
+            output.textContent = this.value;
+        });
+    </script>
+    <!-- PREGUNTA 4 -->
+    <div class="question">
+        <h2>¿Qué tipo de información te aportó más hoy?</h2>
+        <select id="tipo_info_valiosa" name="tipo_info_valiosa" required>
+            <option value="datos">Datos verificables</option>
+            <option value="contexto">Contexto histórico</option>
+            <option value="testimonios">Testimonios personales</option>
+            <option value="opinion">Opinión argumentada</option>
+        </select>
+    </div>
+    <!-- PREGUNTA 5 -->
+    <div class="question">
+        <h2>Resumen del clima informativo del día</h2>
+        <textarea name="resumen_usuario" rows="10" cols="50" placeholder="Una frase es suficiente"></textarea>
+    </div>
+    <input type="submit" class="btn" value="Enviar Respuesta" />
+</form>
+{% endblock %}

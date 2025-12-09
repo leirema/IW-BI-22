@@ -1,0 +1,91 @@
+/* ============================
+   ESTILOS FORMULARIO FLASH
+   ============================ */
+
+.flash_encuesta_wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+    .flash_encuesta_wrapper h1 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+/* Bloques de preguntas */
+.question {
+    margin-bottom: 1.8rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #eee;
+}
+
+    .question:last-of-type {
+        border-bottom: none;
+    }
+
+    .question h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .question p {
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
+    /* Radios y labels */
+    .question label {
+        display: block;
+        cursor: pointer;
+        margin: 0.25rem 0;
+        font-size: 0.95rem;
+    }
+
+    .question input[type="radio"] {
+        margin-right: 0.4rem;
+    }
+
+    /* Slider */
+    .question input[type="range"] {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+#sesgo_valor {
+    display: inline-block;
+    min-width: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--acento, #b71c1c);
+    margin-left: 0.4rem;
+}
+
+/* Select */
+.question select {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+/* Textarea */
+.question textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 0.95rem;
+    resize: vertical;
+    min-height: 120px;
+}
+/* Botón enviar */
+.question .btn {
+    display: block;
+    margin: 1rem auto 0;
+}

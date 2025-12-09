@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render
-from django.views.generic import DetailView, ListView
-from .models import Noticia, Categoria, Comparativa, Medio
+from django.views.generic import DetailView, ListView, FormView, TemplateView
+from .models import Noticia, Categoria, Comparativa, Medio, EncuestaFlash, RespuestaFlash
+from .forms import RespuestaFlashForm
 from .utils import calcular_dominancia_enfoque, calcular_categorias_cubiertas
-from django.db.models import Avg
+from django.db.models import Avg, Count
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 # Create your views here.
 
 class HomeView(ListView):
@@ -100,8 +103,55 @@ class NoticiaDetailView(DetailView):
     template_name = 'noticia_detail.html'
     context_object_name = 'noticia'
 
-class NoticiaListView(ListView):
-    model = Noticia
-    template_name = 'noticia_list.html'
-    queryset = Noticia.objects.order_by('-fecha')
-    context_object_name = 'noticias'
+class ResultadoFlashView(TemplateView):
+    template_name = "flash_resultado.html"
+    def get(self, request, *args, **kwargs):
+        resp_id = request.GET.get("id")
+        if not resp_id:
+            return HttpResponseRedirect(reverse("encuesta_flash"))
+        self.respuesta = RespuestaFlash.objects.get(id=resp_id)
+        return super().get(request, *args, **kwargs)
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        resp_id = self.request.GET.get("id")
+        respuesta = RespuestaFlash.objects.get(id=resp_id)
+        context["respuesta"] = respuesta
+        #gráfica AB
+        conteo = (
+            RespuestaFlash.objects
+            .filter(encuesta=respuesta.encuesta)
+            .values('respuesta_postura')
+            .annotate(total=Count('id'))
+        )
+        context["label_postura"] = [item['respuesta_postura'] for item in conteo]
+        context["data_postura"] = [item['total'] for item in conteo]
+        return context
+
+class RespuestaFlashFormView(FormView):
+    form_class = RespuestaFlashForm
+    template_name = 'flash_form.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # Encuesta activa del día
+        context['encuesta'] = EncuestaFlash.objects.filter(activa=True).latest('fecha_publicacion')
+        return context
+
+    def form_valid(self, form):
+        encuesta = EncuestaFlash.objects.filter(activa=True).latest('fecha_publicacion')
+        cd = form.cleaned_data
+        #Guardar respuesta
+        respuesta = RespuestaFlash.objects.create(
+            encuesta=encuesta,
+            respuesta_actualidad=cd['respuesta_actualidad'],
+            es_correcta=(cd['respuesta_actualidad'] == encuesta.respuesta_correcta),
+            respuesta_postura=cd['respuesta_postura'],
+            sesgo_visibilidad=cd['sesgo_visibilidad'],
+            tipo_info_valiosa=cd['tipo_info_valiosa'],
+            resumen_usuario=cd['resumen_usuario'],
+        )
+        return HttpResponseRedirect(
+            reverse('resultado_flash') + f'?id={respuesta.id}'
+        )
+    

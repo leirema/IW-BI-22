@@ -2,7 +2,7 @@
 from django.urls import path
 from .views import (ComparativaListView, HomeView, ComparativaDetailView, CategoriaDetailView,
                     CategoriaListView, MedioDetailView, MedioListView, 
-                    NoticiaDetailView, NoticiaListView)
+                    NoticiaDetailView, RespuestaFlashFormView, ResultadoFlashView)
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('comparativa/<int:pk>/', ComparativaDetailView.as_view(), name='comparativa'),
@@ -12,5 +12,6 @@ urlpatterns = [
     path('medio/<int:pk>/', MedioDetailView.as_view(), name='medio'),
     path('medios/', MedioListView.as_view(), name='medios'),
     path('noticia/<int:pk>/', NoticiaDetailView.as_view(), name='noticia'),
-    path('articulos/', NoticiaListView.as_view(), name='noticias'),
+    path('flash/', RespuestaFlashFormView.as_view(), name='encuesta_flash'),
+    path('flash/resultado/', ResultadoFlashView.as_view(), name='resultado_flash'),
 ]
