@@ -8,7 +8,7 @@ from django.db.models import Avg, Count
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.utils.decorators import method_decorator
-from ratelimit.decorators import ratelimit
+from django_ratelimit.decorators import ratelimit
 
 class HomeView(ListView):
     model = Comparativa
